@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARRRLIT Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('images/nebula-bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            overflow: hidden;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        h1 {
+            font-size: 3em;
+            text-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
+        }
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 50px 0;
+        }
+        .product {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 0, 255, 0.5);
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .contact-form {
+            margin: 50px 0;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        @keyframes shootingStar {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-100vh); }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Welcome to STARRRLIT</h1>
+        <p>Your cosmic journey begins here!</p>
+    </div>
+    <div class="products">
+        <div class="product">
+            <h2>Purple V2 Hoodie</h2>
+            <img src="images/purpleV2-front.jpg" alt="Purple V2 Front">
+            <img src="images/purpleV2-back.jpg" alt="Purple V2 Back">
+        </div>
+        <div class="product">
+            <h2>Blue V2 Hoodie</h2>
+            <img src="images/blueV2-front.jpg" alt="Blue V2 Front">
+            <img src="images/blueV2-back.jpg" alt="Blue V2 Back">
+        </div>
+        <div class="product">
+            <h2>Blue V3 Hoodie</h2>
+            <img src="images/blueV3-front.jpg" alt="Blue V3 Front">
+            <img src="images/blueV3-back.jpg" alt="Blue V3 Back">
+        </div>
+    </div>
+    <div class="about">
+        <h2>About Us</h2>
+        <p>STARRRLIT is dedicated to providing the best cosmic-themed apparel with a focus on quality and style.</p>
+    </div>
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2026 STARRRLIT. All rights reserved.</p>
+    </footer>
+</body>
+</html>
