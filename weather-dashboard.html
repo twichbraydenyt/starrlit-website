@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌤️ Weather Dashboard</h1>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Enter city name..." autocomplete="off">
+                <button id="searchBtn">Search</button>
+                <button id="locationBtn">📍 Use My Location</button>
+            </div>
+        </header>
+        <main>
+            <section class="current-weather" id="currentWeather">
+                <div class="weather-content">
+                    <div class="city-info">
+                        <h2 id="cityName">--</h2>
+                        <p id="date">--</p>
+                    </div>
+                    <div class="weather-main">
+                        <img id="weatherIcon" src="" alt="Weather icon">
+                        <div class="temp-info">
+                            <span id="temperature" class="temperature">--°C</span>
+                            <span id="description" class="description">--</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="weather-details" id="weatherDetails">
+                <div class="detail-card">
+                    <h3>Feels Like</h3>
+                    <p id="feelsLike">--°C</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Humidity</h3>
+                    <p id="humidity">--%</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Pressure</h3>
+                    <p id="pressure">-- hPa</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Wind Speed</h3>
+                    <p id="windSpeed">-- m/s</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Visibility</h3>
+                    <p id="visibility">-- km</p>
+                </div>
+                <div class="detail-card">
+                    <h3>UV Index</h3>
+                    <p id="uvIndex">--</p>
+                </div>
+            </section>
+            <section class="forecast" id="forecast">
+                <h2>5-Day Forecast</h2>
+                <div class="forecast-cards" id="forecastCards"></div>
+            </section>
+            <div id="errorMessage" class="error-message" style="display: none;"></div>
+        </main>
+        <footer>
+            <p>Weather data provided by OpenWeatherMap API</p>
+            <p>© 2026 Weather Dashboard</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
